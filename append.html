@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append-With-DOM</title>
+</head>
+
+<body>
+    <div class="container">
+        <section id="main-section"></section>
+    </div>
+</body>
+<script>
+    let main_section = document.getElementById("main-section");
+    let create_ul = document.createElement("ul");
+    let createLi = document.createElement("li");
+    createLi.innerHTML = "Item - 1";
+    create_ul.appendChild(createLi);
+    let createLi2 = document.createElement("li");
+    createLi2.innerHTML = "Item - 2";
+    create_ul.appendChild(createLi2);
+    let createLi3 = document.createElement("li");
+    createLi3.innerHTML = "Item - 3";
+    create_ul.appendChild(createLi3);
+
+    main_section.appendChild(create_ul);
+</script>
+
+</html>
