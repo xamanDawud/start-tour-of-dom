@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style of DOM</title>
+</head>
+
+<body>
+    <h1 id="title">Welcome to our Document model Object</h1>
+    <ul class="some_category">
+        <li class="item">Item - 1</li>
+        <li class="item">Item - 2</li>
+        <li class="item">Item - 3</li>
+        <li class="item">Item - 4</li>
+        <li class="item">Item - 5</li>
+    </ul>
+    <script>
+        let title = document.getElementById("title");
+
+        // style the title with Dom
+        title.style.color = "purple";
+        title.style.backgroundColor = "yellow";
+        title.style.textAlign = "center";
+        // Update title with DOM
+        title.innerHTML = "<h2>Welcome To Xaman World</h2>";
+        // console.log(title.getAttribute("id"))
+        title.setAttribute("class", "title-class"); // set class
+
+        // will see the class
+        let item = document.getElementsByClassName("item");
+        item.classList;
+    </script>
+</body>
+
+</html>
