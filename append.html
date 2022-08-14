@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="container-one">
         <section id="main-section"></section>
     </div>
 </body>
@@ -27,6 +27,19 @@
     create_ul.appendChild(createLi3);
 
     main_section.appendChild(create_ul);
+
+    // Fancy way to create element and do update
+
+    let container = document.getElementById("container-one");
+    let anotherSection = document.createElement("section");
+    container.appendChild(anotherSection);
+    let createDiv = document.createElement("div");
+    createDiv.innerHTML = `
+        <h1> Foodies Category</h1> 
+        <p>In the Name Of ALLAH the most merceful the most kind </p>
+        <small>Author:<p>Xaman Dawud</p></small>
+    `;
+    anotherSection.appendChild(createDiv);
 </script>
 
 </html>
